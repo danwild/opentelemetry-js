@@ -3,7 +3,7 @@ const { BasicTracer, BatchSpanProcessor, SimpleSpanProcessor } = require('@opent
 const { ZipkinExporter } = require('@opentelemetry/exporter-zipkin');
 
 const options = {
-  url: 'https://cors-anywhere.herokuapp.com/http://localhost:9411/api/v2/spans',
+  url: 'http://localhost:8888/http://host.docker.internal:9411/api/v2/spans',
   serviceName: 'my-service'
 }
 
